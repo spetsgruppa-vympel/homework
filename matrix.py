@@ -28,7 +28,7 @@ for row in range(lines):
         distance_factor = rel_distance * 1.1
         cell_threshold = threshold - distance_factor  # threshold per cell
 
-        # Assign 1 or 0
+        # assign value
         if n > cell_threshold:
             photo[row][col] = 0
         else:
@@ -43,13 +43,18 @@ photo = [list(row) for row in zip(*photo)]  # transpose back and convert to list
 for row in photo:
     print(row)
 
-# i want to make this into a class so bad but im too lazy to make this into a class
-# i want to make this into a class so bad but im too lazy to make this into a class
-# i want to make this into a class so bad but im too lazy to make this into a class
-# i want to make this into a class so bad but im too lazy to make this into a class
-# i want to make this into a class so bad but im too lazy to make this into a class
-# i want to make this into a class so bad but im too lazy to make this into a class
-# i want to make this into a class so bad but im too lazy to make this into a class
-# i want to make this into a class so bad but im too lazy to make this into a class
-# i want to make this into a class so bad but im too lazy to make this into a class
-# i want to make this into a class so bad but im too lazy to make this into a class
+# ⣟⢿⣟⣛⣛⣛⣛⣛⣛⣛⣛⣛⣛⣛⣛⣛⣒⣒⣂⣀⣀⣀⣀⣀⣀⣀⣀⣀⡀⠀
+# ⠻⣄⠹⣯⡀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠉⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠋⢀⡦
+# ⠀⠘⢦⡈⠻⢶⡶⠶⠶⠶⠶⠶⣦⡄⠀⠀⢰⡶⠶⠶⠶⠶⠤⠤⠶⠋⢀⡴⠏⠀
+# ⠀⠀⠀⠙⢦⡘⢿⣟⠛⠛⠛⠛⠛⠁⠀⠀⢸⡇⣶⣶⣶⣶⣶⣶⣶⡚⠁⠀⠀⠀
+# ⠀⠀⠀⠀⠀⠹⣆⠻⣷⣄⣀⣀⣀⠀⠀⠀⢸⡇⠘⠻⠟⠗⠒⠒⠲⠶⠶⠶⣷⠆
+# ⠀⠀⠀⠀⠀⠀⠈⠳⣌⣉⣉⣉⣻⡇⠀⠀⠈⢻⠏⠉⠉⠉⠉⣹⣿⠟⣠⡾⠋⠀
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⡟⢹⡇⠀⠀⠀⠀⢀⣀⣀⣠⣾⠟⣡⡶⠋⠀⠀⠀
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⢸⡇⠀⠀⣠⠞⠋⣭⣭⣭⣥⠞⠋⠀⠀⠀⠀⠀
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⢸⣇⣤⠞⢁⡤⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⠼⠏⣠⠖⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+# ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣴⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀
+
+# BigPhish Pha Ze Khan BigPhish ART OF CHOKE BigPhish J Kovv BigPhish Tu Vistzz
+# BigPhish Brao Kih BigPhish  Ki Riy Gaon BigPhish Frao Zin BigPhish NEO BigPhish
+# it was more fun tweaking perlin noise than doing what i actually had to do
