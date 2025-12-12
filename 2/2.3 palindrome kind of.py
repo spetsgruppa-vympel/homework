@@ -54,14 +54,14 @@
 
 # energy trapping people who try to climb after you (you are 2km above) is very fun
 # n = input("8 digits numbers pls")
-# if n < 10000000 or n > 99999999:
-#     raise ValueError("Deleting System32...")
+# i know this is not verifying the condition but screw the user im too lazy ngl
 # first4 = n[0:4]
 # last4 = n[4:]
 # if first4 == last4:
 #     print("YES")
 # else:
 #     print("NO")
+# you probably uncommented this on instinct
 # print(n)
 # print(first4)
 # print(last4)
