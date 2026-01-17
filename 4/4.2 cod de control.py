@@ -1,32 +1,27 @@
-numar_porumb = int(input("porumb"))
-valori_nutritive_porumb = list(map(int, input("valori nutritive proumb").split()))
-numar_mere = int(input("mere"))
-valori_nutritive_mere = list(map(int, input("valori nutritive mere").split()))
-numar_intrebari = int(input("intrebari"))
-masa = list(map(int, input("masa").split()))
-print(valori_nutritive_porumb)
+number_list = []
+checklist = []
+userinput = ""
+print("give me numbers and say \"u got enuff numbas little bro\" when ur done")
+while userinput != "u got enuff numbas little bro":
+    userinput = input("give me a numba: ")
+    if userinput.isdigit():  # only add real numbers
+        number_list.append(int(userinput))
+
+def digit_sum(n):
+    return sum(map(int, str(n)))
+
+for number in number_list:
+    control_digit = number
+    while control_digit > 9:
+        control_digit = digit_sum(control_digit)
+    checklist.append(control_digit)
+
+for i in checklist:
+    if i == 2 or i == 3 or i == 5 or i == 7:
+        print(i)
 
 
-
-while numar_intrebari > 0:
-    exists = False
-    if len(valori_nutritive_mere) == 0 or len(valori_nutritive_porumb) == 0:
-        break
-    current_masa = masa.pop(0)
-    if numar_porumb >= 500000 or numar_mere >= 500000 or numar_intrebari >= 100 or current_masa > 2000000000:
-        raise ValueError("mewewewewewewewewewewewweww")
-    # nu exista costel exista doar Генрих Гойдлер
-    for i in valori_nutritive_porumb:
-        if i <= current_masa:
-            if current_masa - i in valori_nutritive_mere:
-                exists = True
-                print("DA")
-                break
-    if not exists:
-        print("nu")
-    numar_intrebari -= 1
-
-
+# (=^･ω･^=)(=^･ω･^=)(=^･ω･^=)(=^･ω･^=)(=^･ω･^=)
 # ⣟⢿⣟⣛⣛⣛⣛⣛⣛⣛⣛⣛⣛⣛⣛⣛⣒⣒⣂⣀⣀⣀⣀⣀⣀⣀⣀⣀⡀⠀
 # ⠻⣄⠹⣯⡀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠉⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠋⢀⡦
 # ⠀⠘⢦⡈⠻⢶⡶⠶⠶⠶⠶⠶⣦⡄⠀⠀⢰⡶⠶⠶⠶⠶⠤⠤⠶⠋⢀⡴⠏⠀
